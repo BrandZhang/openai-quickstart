@@ -1,11 +1,14 @@
 OpenAIModel:
   model: "gpt-3.5-turbo"
-  api_key: "your_openai_api_key"
+  api_key: "sk-8kBuP0jmdgqaoZ4g6237Fa8dBfEe429287DcE917D67eDf4c"
+  base_url: "https://api.xiaoai.plus/v1"
 
 GLMModel:
-  model_url: "your_chatglm_model_url"
+  model_url: "https://api.xiaoai.plus/v1"
   timeout: 300
 
 common:
   book: "tests/test.pdf"
   file_format: "markdown"
+  target_language: "Chinese"
+  pages: 5

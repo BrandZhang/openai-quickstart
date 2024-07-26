@@ -3,14 +3,17 @@ from typing import Optional
 from book import Book, Page, Content, ContentType, TableContent
 from translator.exceptions import PageOutOfRangeException
 from utils import LOG
+import re
 
 
 class PDFParser:
     def __init__(self):
         pass
 
-    def parse_pdf(self, pdf_file_path: str, pages: Optional[int] = None) -> Book:
+    def parse_pdf(self, pdf_file_path: str, pages: int = None) -> Book:
         book = Book(pdf_file_path)
+
+        LOG.debug(f'the limit page  :{pages}')
 
         with pdfplumber.open(pdf_file_path) as pdf:
             if pages is not None and pages > len(pdf.pages):
@@ -27,6 +30,10 @@ class PDFParser:
                 # Store the original text content
                 raw_text = pdf_page.extract_text()
                 tables = pdf_page.extract_tables()
+
+                # Remove page header
+                header_pattern = r"The Old Man and the Sea Asiaing\.com\s*-\s*\d+\s*-\s*"
+                raw_text = re.sub(header_pattern, "", raw_text, count=1)
 
                 # Remove each cell's content from the original text
                 for table_data in tables:
