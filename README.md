@@ -157,15 +157,15 @@ Django Peng - pjt73651@email.com
 
 上传自己手写的图片到images文件夹
 
-![](homework_screencap\Day_2_1.1_images.png)
+![](homework_screencap/Day_2_1.1_images.png)
 
 修改query_base64_image_description的方法描述，分析手写图片
 
-![](homework_screencap\Day_2_1.2_img_des.png)
+![](homework_screencap/Day_2_1.2_img_des.png)
 
 输出分析结果，并使用函数对输出进行渲染，渲染成Markdown格式使结果更易读
 
-![](homework_screencap\Day_2_1.3_img_des_makd.png)
+![](homework_screencap/Day_2_1.3_img_des_makd.png)
 
 
 2. ai translator的使用
@@ -174,35 +174,35 @@ ai translator中，添加2种以上的其他语言对翻译
 
 修改main方法，增加两个参数，可以控制target language 和 limit pages
 
-![](homework_screencap\Day_2_2.1_main.png)
+![](homework_screencap/Day_2_2.1_main.png)
 
 增加config 的默认配置，不传参数时，获得默认值
 
-![](homework_screencap\Day_2_2.1_config.png)
+![](homework_screencap/Day_2_2.1_config.png)
 
 配置命令行参数和描述
 
-![](homework_screencap\Day_2_2.1_argument_parser.png)
+![](homework_screencap/Day_2_2.1_argument_parser.png)
 
 翻译时增加target language 参数 
 
-![](homework_screencap\Day_2_2.1_translator.png)
+![](homework_screencap/Day_2_2.1_translator.png)
 
 保存时，根据不同的target language 保存到不同的文件中
 
-![](homework_screencap\Day_2_2.1_writer.png)
+![](homework_screencap/Day_2_2.1_writer.png)
 
 去掉翻译时，每页的页眉
 
-![](homework_screencap\Day_2_2.1_pdf_parser.png)
+![](homework_screencap/Day_2_2.1_pdf_parser.png)
 
 翻译结果
 
-![](homework_screencap\Day_2_2.1_result.png)
+![](homework_screencap/Day_2_2.1_result.png)
 
 翻译的详细结果（举例）
 
-![](homework_screencap\Day_2_2.1_result_detail.png)
+![](homework_screencap/Day_2_2.1_result_detail.png)
 
 
 3. 扩展langchain chains
@@ -211,42 +211,42 @@ ai translator中，添加2种以上的其他语言对翻译
 
 各个学科的提示词模板
 
-![](homework_screencap\Day_2_3.1_router_chain.png)
+![](homework_screencap/Day_2_3.1_router_chain.png)
 
 Chains问答结果
 
-![](homework_screencap\Day_2_3.1_router_chain_result.png)
+![](homework_screencap/Day_2_3.1_router_chain_result.png)
 
 
 Chains问答详细结果
 
-![](homework_screencap\Day_2_3.1_router_chain_result_detail.png)
+![](homework_screencap/Day_2_3.1_router_chain_result_detail.png)
 
 
 ### Day 3
 
 1. 自行生成一个新的产品介绍知识库，开发一个“电脑销售聊天机器人”
 
-![](homework_screencap\Day_3_sales_data.png)
+![](homework_screencap/Day_3_sales_data.png)
 
 2. 在"电脑销售聊天机器人"中，使用向量数据库进行检索回答，
 
-![](homework_screencap\Day_3_faiss_data.png)
+![](homework_screencap/Day_3_faiss_data.png)
 
 3. 如果向量数据库检索不到问题答案时，能够通过一个prompt来回答这个问题，而不是直接告诉用户我是一个AI机器人。
 
-![](homework_screencap\Day_3_chat_art.png)
+![](homework_screencap/Day_3_chat_art.png)
 
 4. 聊天结果（举例）
 
-![](homework_screencap\Day_3_chat_1.png)
+![](homework_screencap/Day_3_chat_1.png)
 
-![](homework_screencap\Day_3_chat_2.png)
+![](homework_screencap/Day_3_chat_2.png)
 
-![](homework_screencap\Day_3_chat_3.png)
+![](homework_screencap/Day_3_chat_3.png)
 
-![](homework_screencap\Day_3_chat_4.png)
+![](homework_screencap/Day_3_chat_4.png)
 
-![](homework_screencap\Day_3_chat_5.png)
+![](homework_screencap/Day_3_chat_5.png)
 
 
